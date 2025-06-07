@@ -1,5 +1,22 @@
-<section id="benefits" class="py-16 bg-white">
-  <div class="container mx-auto px-4">
+<script lang="ts">
+  import { inview } from 'svelte-inview';
+
+  let isInView = false;
+  let hasAnimated = false;
+</script>
+
+<section 
+  id="benefits" 
+  class="py-16 bg-white"
+  use:inview={{ unobserveOnEnter: true, threshold: 0.1 }}
+  on:inview_change={(event) => {
+    if (event.detail.inView && !hasAnimated) {
+      isInView = true;
+      hasAnimated = true;
+    }
+  }}
+>
+  <div class="container mx-auto px-4 transition-all duration-1000 transform {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}">
     <h2 class="text-center text-4xl font-extrabold mb-12 text-sky-800">Benefits for Your Business</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-400/20">
