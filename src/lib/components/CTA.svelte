@@ -4,8 +4,11 @@
       <h2 class="text-4xl font-extrabold mb-4">Ready to Get Started?</h2>
       <p class="text-lg mb-8">Sign up for a free trial or request a demo to see how ConsentPro can help your business.</p>
       <div class="flex justify-center gap-4 flex-wrap">
-        <a href="/free-trial" class="bg-white text-sky-800 py-3 px-6 rounded-lg font-bold transition-colors hover:bg-sky-200">Start Your Free Trial</a>
-        <a href="/request-demo" class="bg-transparent border-2 border-white py-3 px-6 rounded-lg font-bold transition-colors hover:bg-white hover:text-sky-600">Request a Demo</a>
+        <a href="/free-trial" class="group relative inline-flex items-center justify-center gap-2.5 px-6 py-3 font-bold text-sky-800 rounded-lg shadow-md transition-all duration-300 border-2 border-transparent bg-gradient-to-r from-white to-gray-200 bg-clip-padding hover:from-gray-100 hover:to-gray-300 hover:border-white focus:outline-none focus:ring-2 focus:ring-gray-50 focus:ring-offset-2 focus:ring-offset-sky-700 transform hover:scale-105">
+            Start Your Free Trial
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+        </a>
+        <a href="/request-demo" class="group relative inline-flex items-center justify-center gap-2.5 px-6 py-3 font-bold text-white rounded-lg shadow-sm transition-all duration-300 border-2 border-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-sky-700 transform hover:scale-105">Request a Demo</a>
       </div>
     </div>
   </div>
