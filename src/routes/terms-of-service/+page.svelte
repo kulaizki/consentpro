@@ -14,7 +14,7 @@
 			<button
 				on:click={() => history.back()}
 				aria-label="Go back to the previous page"
-				class="hover:cursor-pointer absolute top-6 left-6 md:top-8 md:left-8 z-10 text-sky-600 hover:text-sky-800 transition-colors"
+				class="hover:cursor-pointer text-sky-600 hover:text-sky-800 transition-colors"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
