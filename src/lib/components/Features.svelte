@@ -40,18 +40,28 @@
     }
   }}
 >
-  <div class="container mx-auto px-4 transition-all duration-1000 transform {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}">
-    <div class="text-center mb-12 md:mb-16">
+  <div class="container mx-auto px-4">
+    <div
+      class="text-center mb-12 md:mb-16 transition-all duration-700 ease-out {isInView
+        ? 'opacity-100 translate-y-0'
+        : 'opacity-0 translate-y-10'}"
+    >
       <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-sky-800">Core Features</h2>
-      <p class="text-lg md:text-xl text-sky-600 mt-3 md:mt-4">Everything you need for effortless compliance.</p>
+      <p class="text-lg md:text-xl text-sky-600 mt-3 md:mt-4">
+        Everything you need for effortless compliance.
+      </p>
     </div>
     <div class="grid md:grid-cols-3 gap-8 md:gap-10">
-      {#each features as feature}
-        <div class="text-center p-8 bg-sky-50/50 rounded-lg shadow-lg 
+      {#each features as feature, i}
+        <div
+          class="text-center p-8 bg-sky-50/50 rounded-lg shadow-lg 
                     border border-sky-100 
                     hover:shadow-sky-400/20 hover:border-sky-300 hover:-translate-y-1 
-                    transition-all duration-300 ease-in-out 
-                    flex flex-col items-center">
+                    transition-all duration-500 ease-in-out 
+                    flex flex-col items-center
+                    transform {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}"
+          style="transition-delay: {300 + i * 200}ms"
+        >
           {@html feature.icon}
           <h3 class="text-2xl font-bold text-sky-700 mb-3">{feature.title}</h3>
           <p class="text-md text-sky-800/80">{feature.description}</p>
