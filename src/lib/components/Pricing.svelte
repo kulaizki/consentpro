@@ -23,7 +23,7 @@
           <li>Up to 10,000 consent records</li>
           <li>Priority Email & Chat Support</li>
         </ul>
-        <a href="/subscribe/pro" class="bg-sky-400 text-sky-800 py-4 px-8 rounded-md font-bold hover:bg-sky-500 hover:text-white transition-colors">Choose Pro</a>
+        <a href="/subscribe/pro" class="bg-sky-600 text-white py-4 px-8 rounded-md font-bold hover:bg-sky-700 transition-colors">Choose Pro</a>
       </div>
       <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 text-center transition-transform transform hover:-translate-y-1 hover:shadow-lg">
         <h3 class="text-2xl font-bold text-sky-800 mb-4">Enterprise</h3>
