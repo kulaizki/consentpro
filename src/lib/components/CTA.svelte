@@ -7,7 +7,7 @@
 
 <section 
   id="cta" 
-  class="py-16 bg-white border-b border-gray-200"
+  class="py-16 bg-sky-50 border-b border-gray-200"
   use:inview={{ unobserveOnEnter: true, threshold: 0.1 }}
   on:inview_change={(event) => {
     if (event.detail.inView && !hasAnimated) {
