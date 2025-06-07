@@ -8,8 +8,11 @@
     });
 </script>
 
-<section class="flex flex-col justify-center min-h-screen py-16 md:py-20 relative bg-white">
-    <div class="container mx-auto text-center px-4 transition-all duration-1000 transform {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}">
+<section 
+  class="hero-section flex flex-col justify-center min-h-screen py-16 md:py-20 relative bg-cover bg-center bg-no-repeat"
+  style="background-image: url('/hero-bg-min.png');"
+>
+    <div class="container relative z-[2] mx-auto text-center px-4 transition-all duration-1000 transform {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}">
         
         <div class="mb-4 sm:mb-6 inline-block">
             <div class="p-0.5 rounded-full bg-gradient-to-r from-sky-200 to-sky-400 shadow-lg">
@@ -39,4 +42,16 @@
             </svg>
         </a>
     </div>
-</section> 
+</section>
+
+<style>
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .92);
+  }
+</style> 
