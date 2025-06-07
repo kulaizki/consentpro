@@ -30,7 +30,7 @@
 
 <section 
   id="benefits" 
-  class="py-16 md:py-24 bg-sky-50 border-b border-sky-200 min-h-screen flex flex-col justify-center"
+  class="py-16 md:py-24 bg-white border-b border-sky-200 min-h-screen flex flex-col justify-center"
   use:inview={{ unobserveOnEnter: true, threshold: 0.1 }}
   on:inview_change={(event) => {
     if (event.detail.inView && !hasAnimated) {
