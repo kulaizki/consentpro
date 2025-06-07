@@ -9,7 +9,7 @@
 </script>
 
 <section 
-  class="hero-section flex flex-col justify-center min-h-screen py-16 md:py-20 relative bg-cover bg-center bg-no-repeat"
+  class="hero-section flex flex-col justify-center min-h-screen py-16 md:py-20 relative bg-cover bg-center bg-no-repeat border-b border-gray-200"
   style="background-image: url('/hero-bg-min.png');"
 >
     <div class="container relative z-[2] mx-auto text-center px-4 transition-all duration-1000 transform {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}">
