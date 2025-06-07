@@ -20,10 +20,10 @@
 
 		<!-- Desktop Navigation Links -->
 		<ul class="hidden md:flex items-center space-x-6">
-			<li><a href="/#features" class="font-semibold text-white hover:text-sky-400 transition-colors">Features</a></li>
-			<li><a href="/#benefits" class="font-semibold text-white hover:text-sky-400 transition-colors">Benefits</a></li>
-			<li><a href="/#pricing" class="font-semibold text-white hover:text-sky-400 transition-colors">Pricing</a></li>
-			<li><a href="/contact" class="inline-block text-sky-800 font-bold px-4 py-2 rounded-lg shadow-md transition-all duration-300 bg-gradient-to-r from-white to-gray-200 hover:from-gray-100 hover:to-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:scale-105">Contact</a></li>
+			<li><a href="/#features" class="font-medium text-white hover:text-sky-400 transition-colors">Features</a></li>
+			<li><a href="/#benefits" class="font-medium text-white hover:text-sky-400 transition-colors">Benefits</a></li>
+			<li><a href="/#pricing" class="font-medium text-white hover:text-sky-400 transition-colors">Pricing</a></li>
+			<li><a href="/contact" class="inline-block text-sky-800 font-semibold px-4 py-2 rounded-lg shadow-md transition-all duration-300 bg-gradient-to-r from-white to-gray-200 hover:from-gray-100 hover:to-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:scale-105">Contact</a></li>
 		</ul>
 
 		<!-- Hamburger Menu Button (Mobile) -->
