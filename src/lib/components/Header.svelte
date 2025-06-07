@@ -14,7 +14,7 @@
 			<img
 				src="/consentpro-logo-text-min.png"
 				alt="ConsentPro Logo"
-				class="h-12 w-auto group-hover:opacity-90 transition-opacity duration-150"
+				class="h-12 w-auto group-hover:opacity-80 transition-opacity duration-150"
 			/>
 		</a>
 
