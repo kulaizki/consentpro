@@ -19,7 +19,7 @@
   <div class="container mx-auto px-4 transition-all duration-1000 transform {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}">
     <h2 class="text-center text-4xl font-extrabold mb-12 text-sky-800">Choose Your Plan</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
-      <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 text-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-400/20">
+      <div class="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-sm border border-gray-200 text-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-400/20">
         <h3 class="text-2xl font-bold text-sky-800 mb-4">Basic</h3>
         <p class="text-sky-600 mb-8"><span class="text-4xl font-bold">₱1,499</span>/mo</p>
         <ul class="space-y-4 mb-10">
@@ -33,7 +33,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
         </a>
       </div>
-      <div class="bg-white p-10 rounded-lg shadow-lg shadow-sky-400/40 border-2 border-sky-400 text-center transform scale-105 relative">
+      <div class="bg-white/80 backdrop-blur-sm p-10 rounded-lg shadow-lg shadow-sky-400/40 border-2 border-sky-400 text-center transform scale-105 relative">
         <p class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-sky-500 text-white text-sm font-bold px-4 py-1 rounded-full">Most Popular</p>
         <h3 class="text-3xl font-extrabold text-sky-800 mb-4">Pro</h3>
         <p class="text-sky-600 mb-8"><span class="text-5xl font-bold">₱3,999</span>/mo</p>
@@ -49,7 +49,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
         </a>
       </div>
-      <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 text-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-400/20">
+      <div class="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-sm border border-gray-200 text-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-400/20">
         <h3 class="text-2xl font-bold text-sky-800 mb-4">Enterprise</h3>
         <p class="text-sky-600 mb-8"><span class="text-4xl font-bold">Custom</span></p>
         <ul class="space-y-4 mb-10">

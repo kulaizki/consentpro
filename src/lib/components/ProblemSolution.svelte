@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="grid md:grid-cols-2 gap-8 md:gap-10 items-stretch">
-			<div class="bg-white p-8 md:p-10 rounded-xl shadow-lg 
+			<div class="bg-white/80 backdrop-blur-sm p-8 md:p-10 rounded-xl shadow-lg 
 						border-2 border-transparent 
 						hover:shadow-sky-400/20 hover:border-sky-300 hover:-translate-y-1 
 						transition-all duration-300 ease-in-out 
@@ -40,7 +40,7 @@
 					<li>Time-consuming manual work</li>
 				</ul>
 			</div>
-			<div class="bg-white p-8 md:p-10 rounded-xl shadow-lg 
+			<div class="bg-white/80 backdrop-blur-sm p-8 md:p-10 rounded-xl shadow-lg 
 						border-2 border-transparent 
 						hover:shadow-sky-400/20 hover:border-sky-300 hover:-translate-y-1 
 						transition-all duration-300 ease-in-out 

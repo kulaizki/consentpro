@@ -45,7 +45,7 @@
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
       {#each steps as step, i}
-        <div class="text-center bg-white p-6 rounded-xl shadow-lg flex flex-col items-center 
+        <div class="text-center bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg flex flex-col items-center 
                     border-t-4 border-sky-400 
                     transition-all duration-300 ease-in-out 
                     hover:shadow-xl hover:shadow-sky-400/20 hover:-translate-y-1">
