@@ -31,7 +31,7 @@
 		'@type': 'Website',
 		name: siteName,
 		url: canonicalUrl,
-		logo: getAbsoluteImageUrl('/logo-with-text.svg'),
+		logo: getAbsoluteImageUrl('/consentpro-logo-text-min.png'),
         description: description,
 	};
 </script>
