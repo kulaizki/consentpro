@@ -7,11 +7,6 @@
     import CTA from '$lib/components/CTA.svelte';
 </script>
 
-<svelte:head>
-    <title>ConsentPro - Simplify Data Privacy Compliance</title>
-    <meta name="description" content="ConsentPro helps Philippine businesses comply with NPC Circular No. 2023-04 on data privacy consent.">
-</svelte:head>
-
 <Hero />
 <ProblemSolution />
 <Features />
