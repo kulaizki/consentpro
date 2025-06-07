@@ -22,6 +22,7 @@
 	}
 
 	$: absoluteImageUrl = getAbsoluteImageUrl(image);
+	$: absoluteLogoUrl = getAbsoluteImageUrl('/cp-logo-min.png');
 
 	$: canonicalUrl = `${siteUrlBase}${currentPath}`;
 
@@ -54,6 +55,7 @@
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
 	<meta property="og:image" content={absoluteImageUrl} />
+	<meta property="og:logo" content={absoluteLogoUrl} />
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
