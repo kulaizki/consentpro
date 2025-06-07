@@ -22,7 +22,7 @@
       <div class="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-sm border border-gray-200 text-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-400/20">
         <h3 class="text-2xl font-bold text-sky-800 mb-4">Basic</h3>
         <p class="text-sky-600 mb-8"><span class="text-4xl font-bold">₱1,499</span>/mo</p>
-        <ul class="space-y-4 mb-10">
+        <ul class="space-y-4 mb-10 text-sky-800/80">
           <li>Consent Form Builder</li>
           <li>Consent Management Dashboard</li>
           <li>Up to 1,000 consent records</li>
@@ -37,7 +37,7 @@
         <p class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-sky-500 text-white text-sm font-bold px-4 py-1 rounded-full">Most Popular</p>
         <h3 class="text-3xl font-extrabold text-sky-800 mb-4">Pro</h3>
         <p class="text-sky-600 mb-8"><span class="text-5xl font-bold">₱3,999</span>/mo</p>
-        <ul class="space-y-4 mb-10">
+        <ul class="space-y-4 mb-10 text-sky-800/80">
           <li>All features in Basic</li>
           <li>Automated Transparency Notices</li>
           <li>Consent Withdrawal Handling</li>
@@ -52,7 +52,7 @@
       <div class="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-sm border border-gray-200 text-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-400/20">
         <h3 class="text-2xl font-bold text-sky-800 mb-4">Enterprise</h3>
         <p class="text-sky-600 mb-8"><span class="text-4xl font-bold">Custom</span></p>
-        <ul class="space-y-4 mb-10">
+        <ul class="space-y-4 mb-10 text-sky-800/80">
           <li>All features in Pro</li>
           <li>Compliance Reporting</li>
           <li>Unlimited consent records</li>
