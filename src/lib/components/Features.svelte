@@ -3,6 +3,7 @@
 
   let isInView = false;
   let hasAnimated = false;
+  let applyDelay = true;
 
   const icons = {
     forms: `<svg class="w-10 h-10 text-sky-500 mb-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>`,
@@ -37,6 +38,9 @@
     if (event.detail.inView && !hasAnimated) {
       isInView = true;
       hasAnimated = true;
+      setTimeout(() => {
+        applyDelay = false;
+      }, 1200);
     }
   }}
 >
@@ -60,7 +64,9 @@
                     transition-all duration-500 ease-in-out 
                     flex flex-col items-center
                     transform {isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}"
-          style="transition-delay: {300 + i * 200}ms"
+          style="{applyDelay
+            ? `transition-delay: ${300 + i * 200}ms`
+            : 'transition-delay: 0ms'}"
         >
           {@html feature.icon}
           <h3 class="text-2xl font-bold text-sky-700 mb-3">{feature.title}</h3>

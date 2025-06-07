@@ -3,6 +3,7 @@
 
 	let isInView = false;
 	let hasAnimated = false;
+	let applyDelay = true;
 
 	const steps = [
 		{
@@ -40,15 +41,28 @@
 		if (event.detail.inView && !hasAnimated) {
 			isInView = true;
 			hasAnimated = true;
+			setTimeout(() => {
+				applyDelay = false;
+			}, 1400);
 		}
 	}}
 >
 	<div class="container mx-auto px-4">
 		<div class="text-center mb-16 md:mb-20">
-			<h2 class="text-3xl sm:text-4xl font-bold text-sky-800 leading-tight">
+			<h2
+				class="text-3xl sm:text-4xl font-bold text-sky-800 leading-tight transition-all duration-700 ease-out {isInView
+					? 'opacity-100 translate-y-0'
+					: 'opacity-0 -translate-y-8'}"
+				style="{applyDelay ? 'transition-delay: 100ms;' : 'transition-delay: 0ms;'}"
+			>
 				A Simple Path to Compliance
 			</h2>
-			<p class="mt-3 md:mt-4 text-lg md:text-xl text-sky-600 max-w-3xl mx-auto">
+			<p
+				class="mt-3 md:mt-4 text-lg md:text-xl text-sky-600 max-w-3xl mx-auto transition-all duration-700 ease-out {isInView
+					? 'opacity-100 translate-y-0'
+					: 'opacity-0 translate-y-8'}"
+				style="{applyDelay ? 'transition-delay: 250ms;' : 'transition-delay: 0ms;'}"
+			>
 				Our platform breaks down your journey to data privacy compliance into four straightforward
 				steps.
 			</p>
@@ -85,7 +99,9 @@
 						class="relative text-center flex flex-col items-center transition-all duration-500 transform {isInView
 							? 'opacity-100 translate-y-0'
 							: 'opacity-0 translate-y-8'}"
-						style="transition-delay: {i * 150}ms"
+						style="{applyDelay
+							? `transition-delay: ${400 + i * 150}ms`
+							: 'transition-delay: 0ms'}"
 					>
 						<div
 							class="flex-shrink-0 mb-6 bg-white/80 backdrop-blur-sm text-sky-500 rounded-full w-24 h-24 flex items-center justify-center shadow-lg border-4 border-white"

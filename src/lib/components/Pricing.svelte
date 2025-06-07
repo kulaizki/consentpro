@@ -3,6 +3,7 @@
 
   let isInView = false;
   let hasAnimated = false;
+  let applyDelay = true;
 </script>
 
 <section 
@@ -13,6 +14,9 @@
     if (event.detail.inView && !hasAnimated) {
       isInView = true;
       hasAnimated = true;
+      setTimeout(() => {
+        applyDelay = false;
+      }, 1050);
     }
   }}
 >
@@ -30,7 +34,7 @@
         class="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-sm border border-gray-200 text-center transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-400/20 {isInView
           ? 'opacity-100 translate-x-0'
           : 'opacity-0 -translate-x-10'}"
-        style="transition-delay: 250ms;"
+        style="{applyDelay ? 'transition-delay: 250ms;' : 'transition-delay: 0ms;'}"
       >
         <h3 class="text-2xl font-bold text-sky-800 mb-4">Basic</h3>
         <p class="text-sky-600 mb-8"><span class="text-4xl font-bold">₱1,499</span>/mo</p>
@@ -62,7 +66,7 @@
         class="bg-white/80 backdrop-blur-sm p-10 rounded-lg shadow-lg shadow-sky-400/40 border-2 border-sky-400 text-center transform transition-all duration-500 ease-out relative {isInView
           ? 'opacity-100 scale-105'
           : 'opacity-0 scale-95'}"
-        style="transition-delay: 400ms;"
+        style="{applyDelay ? 'transition-delay: 400ms;' : 'transition-delay: 0ms;'}"
       >
         <p
           class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-sky-500 text-white text-sm font-bold px-4 py-1 rounded-full"
@@ -100,7 +104,7 @@
         class="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-sm border border-gray-200 text-center transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-400/20 {isInView
           ? 'opacity-100 translate-x-0'
           : 'opacity-0 translate-x-10'}"
-        style="transition-delay: 550ms;"
+        style="{applyDelay ? 'transition-delay: 550ms;' : 'transition-delay: 0ms;'}"
       >
         <h3 class="text-2xl font-bold text-sky-800 mb-4">Enterprise</h3>
         <p class="text-sky-600 mb-8"><span class="text-4xl font-bold">Custom</span></p>

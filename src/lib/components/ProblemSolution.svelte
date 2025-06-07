@@ -2,6 +2,7 @@
 	import { inview } from 'svelte-inview';
 	let isInView = false;
 	let hasAnimated = false;
+	let applyDelay = true;
 </script>
 
 <section
@@ -12,6 +13,9 @@
 		if (event.detail.inView && !hasAnimated) {
 			isInView = true;
 			hasAnimated = true;
+			setTimeout(() => {
+				applyDelay = false;
+			}, 1400);
 		}
 	}}
 >
@@ -53,7 +57,7 @@
 						flex flex-col transform {isInView
 					? 'opacity-100 translate-x-0'
 					: 'opacity-0 -translate-x-12'}"
-				style="transition-delay: 550ms;"
+				style="{applyDelay ? 'transition-delay: 550ms;' : 'transition-delay: 0ms;'}"
 			>
 				<h3 class="text-2xl md:text-3xl font-semibold text-sky-800 mb-5">The Challenge</h3>
 				<p class="text-lg text-sky-700 mb-5 flex-grow">
@@ -75,7 +79,7 @@
 						flex flex-col transform {isInView
 					? 'opacity-100 translate-x-0'
 					: 'opacity-0 translate-x-12'}"
-				style="transition-delay: 700ms;"
+				style="{applyDelay ? 'transition-delay: 700ms;' : 'transition-delay: 0ms;'}"
 			>
 				<h3 class="text-2xl md:text-3xl font-semibold text-sky-800 mb-5">
 					<span class="text-sky-500">The ConsentPro Solution</span>
