@@ -1,4 +1,4 @@
-<section id="features" class="py-16">
+<section id="features" class="py-16 bg-sky-50">
   <div class="container mx-auto px-4">
     <h2 class="text-center text-4xl font-extrabold mb-12 text-sky-800">Main Features</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
