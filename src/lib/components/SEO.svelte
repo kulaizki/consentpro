@@ -13,18 +13,8 @@
 
 	$: currentPath = $page.url.pathname;
 
-	function getAbsoluteImageUrl(imgPath: string): string {
-		if (imgPath.startsWith('http')) {
-			return imgPath;
-		}
-		const path = imgPath.startsWith('/') ? imgPath.substring(1) : imgPath;
-		return `${siteUrlBase}/${path}`;
-	}
-
-	$: absoluteImageUrl = getAbsoluteImageUrl(image);
-	$: absoluteLogoUrl = getAbsoluteImageUrl('/cp-logo-min.png');
-
 	$: canonicalUrl = `${siteUrlBase}${currentPath}`;
+	const logoUrl: string = '/cp-logo-min.png';
 
 	// Construct JSON-LD
 	$: jsonLdSchema = {
@@ -32,8 +22,8 @@
 		'@type': 'Website',
 		name: siteName,
 		url: canonicalUrl,
-		logo: getAbsoluteImageUrl('/consentpro-logo-text-min.png'),
-        description: description,
+		logo: `${siteUrlBase}/consentpro-logo-text-min.png`,
+		description: description
 	};
 </script>
 
@@ -54,8 +44,8 @@
 	<meta property="og:url" content={canonicalUrl} />
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
-	<meta property="og:image" content={absoluteImageUrl} />
-	<meta property="og:logo" content={absoluteLogoUrl} />
+	<meta property="og:image" content={image} />
+	<meta property="og:logo" content={logoUrl} />
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
@@ -63,7 +53,7 @@
 	<meta property="twitter:url" content={canonicalUrl} />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content={absoluteImageUrl} />
+	<meta name="twitter:image" content={image} />
 
 	{@html `<script type="application/ld+json">${JSON.stringify(jsonLdSchema, null, 2)}</script>`}
 </svelte:head> 
