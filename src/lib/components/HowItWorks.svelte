@@ -26,7 +26,7 @@
 
 <section 
   id="how-it-works" 
-  class="py-16 md:py-24 bg-sky-50 border-b border-gray-200 min-h-screen flex flex-col justify-center"
+  class="py-16 md:py-24 bg-sky-50 border-b border-sky-200 min-h-screen flex flex-col justify-center"
   use:inview={{ threshold: 0.1, unobserveOnEnter: true }}
   on:inview_change={(event) => {
     if (event.detail.inView && !hasAnimated) {
@@ -45,10 +45,10 @@
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
       {#each steps as step, i}
-        <div class="text-center bg-sky-50/50 p-6 rounded-xl shadow-lg flex flex-col items-center 
-                    border border-sky-100 
-                    hover:shadow-sky-400/20 hover:border-sky-300 hover:-translate-y-1 
-                    transition-all duration-300 ease-in-out">
+        <div class="text-center bg-white p-6 rounded-xl shadow-lg flex flex-col items-center 
+                    border-t-4 border-sky-400 
+                    transition-all duration-300 ease-in-out 
+                    hover:shadow-xl hover:shadow-sky-400/20 hover:-translate-y-1">
           <div class="flex-shrink-0 mb-5 bg-sky-500 text-white rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center text-xl md:text-2xl font-bold shadow-md">
             {i + 1}
           </div>
