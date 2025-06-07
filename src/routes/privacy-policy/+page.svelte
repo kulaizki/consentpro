@@ -5,7 +5,7 @@
 
 <div class="bg-pattern min-h-screen py-16 md:py-24">
 	<div
-		in:fly={{ y: 20, duration: 800, easing: sineIn, delay: 200 }}
+		in:fly={{ y: 20, duration: 300, easing: sineIn, delay: 200 }}
 		class="container mx-auto max-w-4xl px-4"
 	>
 		<div

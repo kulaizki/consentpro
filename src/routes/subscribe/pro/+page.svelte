@@ -38,7 +38,7 @@
 		</svg>
 	</button>
 	<div
-		in:fly={{ y: 20, duration: 800, easing: sineIn, delay: 200 }}
+		in:fly={{ y: 20, duration: 300, easing: sineIn, delay: 200 }}
 		class="w-full sm:w-2/3 lg:max-w-2xl mx-auto px-4"
 	>
 		<div

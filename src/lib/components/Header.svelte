@@ -20,10 +20,10 @@
 
 		<!-- Desktop Navigation Links -->
 		<ul class="hidden md:flex items-center space-x-6">
-			<li><a href="#features" class="font-semibold text-white hover:text-sky-400 transition-colors">Features</a></li>
-			<li><a href="#benefits" class="font-semibold text-white hover:text-sky-400 transition-colors">Benefits</a></li>
-			<li><a href="#pricing" class="font-semibold text-white hover:text-sky-400 transition-colors">Pricing</a></li>
-			<li><a href="#contact" class="inline-block text-sky-800 font-bold px-4 py-2 rounded-lg shadow-md transition-all duration-300 bg-gradient-to-r from-white to-gray-200 hover:from-gray-100 hover:to-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:scale-105">Contact</a></li>
+			<li><a href="/#features" class="font-semibold text-white hover:text-sky-400 transition-colors">Features</a></li>
+			<li><a href="/#benefits" class="font-semibold text-white hover:text-sky-400 transition-colors">Benefits</a></li>
+			<li><a href="/#pricing" class="font-semibold text-white hover:text-sky-400 transition-colors">Pricing</a></li>
+			<li><a href="/contact" class="inline-block text-sky-800 font-bold px-4 py-2 rounded-lg shadow-md transition-all duration-300 bg-gradient-to-r from-white to-gray-200 hover:from-gray-100 hover:to-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:scale-105">Contact</a></li>
 		</ul>
 
 		<!-- Hamburger Menu Button (Mobile) -->
@@ -48,10 +48,10 @@
 	{#if mobileMenuOpen}
 		<div transition:fly={{ y: -20, duration: 300 }} class="md:hidden absolute top-full left-0 w-full bg-gray-950/95 backdrop-blur-md shadow-lg pt-2 pb-4 z-40">
 			<div class="container mx-auto px-4 flex flex-col space-y-2">
-				<a href="#features" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-400 hover:bg-transparent transition-colors" on:click={toggleMobileMenu}>Features</a>
-				<a href="#benefits" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-400 hover:bg-transparent transition-colors" on:click={toggleMobileMenu}>Benefits</a>
-				<a href="#pricing" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-400 hover:bg-transparent transition-colors" on:click={toggleMobileMenu}>Pricing</a>
-				<a href="#contact" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-400 hover:bg-transparent transition-colors" on:click={toggleMobileMenu}>Contact</a>
+				<a href="/#features" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-400 hover:bg-transparent transition-colors" on:click={toggleMobileMenu}>Features</a>
+				<a href="/#benefits" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-400 hover:bg-transparent transition-colors" on:click={toggleMobileMenu}>Benefits</a>
+				<a href="/#pricing" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-400 hover:bg-transparent transition-colors" on:click={toggleMobileMenu}>Pricing</a>
+				<a href="/contact" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-400 hover:bg-transparent transition-colors" on:click={toggleMobileMenu}>Contact</a>
 			</div>
 		</div>
 	{/if}

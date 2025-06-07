@@ -36,7 +36,7 @@
 
 <div class="min-h-screen w-full bg-pattern flex items-center justify-center p-4">
 	<div
-		in:fly={{ y: 20, duration: 800, easing: sineIn, delay: 200 }}
+		in:fly={{ y: 20, duration: 300, easing: sineIn, delay: 200 }}
 		out:fade={{ duration: 300 }}
 		class="w-full max-w-md"
 	>

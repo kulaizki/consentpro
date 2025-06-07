@@ -28,8 +28,8 @@
       <div>
         <h4 class="text-white font-semibold mb-4">Support</h4>
         <ul class="space-y-3">
-          <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
-          <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+          <li><a href="/#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+          <li><a href="/contact" class="hover:text-white transition-colors">Contact Us</a></li>
         </ul>
       </div>
 
