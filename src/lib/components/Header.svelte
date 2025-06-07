@@ -12,7 +12,7 @@
 	<div class="container mx-auto px-4 flex justify-between items-center">
 		<a href="/" class="flex items-center group z-10" on:click={() => mobileMenuOpen = false}>
 			<img
-				src="/cp-logo-text-min.png"
+				src="/consentpro-logo-text-min.png"
 				alt="ConsentPro Logo"
 				class="h-12 w-auto group-hover:opacity-90 transition-opacity duration-150"
 			/>

@@ -4,7 +4,7 @@
       <!-- Company Info -->
       <div class="mb-8 md:mb-0">
         <a href="/" class="mb-4 inline-block">
-          <img src="/cp-logo-text-min.png" alt="ConsentPro Logo" class="h-12 w-auto">
+          <img src="/consentpro-logo-text-min.png" alt="ConsentPro Logo" class="h-12 w-auto">
         </a>
         <p class="text-gray-400">Simplifying data privacy compliance for businesses in the Philippines.</p>
         <div class="mt-6 flex space-x-4">
