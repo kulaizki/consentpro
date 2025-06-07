@@ -9,10 +9,26 @@
 		class="container mx-auto max-w-4xl px-4"
 	>
 		<div
-			class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl shadow-sky-400/10 p-8 md:p-12 border border-sky-200/50"
+			class="relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl shadow-sky-400/10 p-8 md:p-12 border border-sky-200/50"
 		>
-			<h1 class="text-3xl md:text-4xl font-bold text-sky-800 mb-6">Privacy Policy</h1>
-			<p class="text-sky-600 mb-8">Last updated: {new Date().toLocaleDateString()}</p>
+			<button
+				on:click={() => history.back()}
+				aria-label="Go back to the previous page"
+				class="hover:cursor-pointer absolute top-6 left-6 md:top-8 md:left-8 z-10 text-sky-600 hover:text-sky-800 transition-colors"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="2.5"
+					stroke="currentColor"
+					class="w-6 h-6"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+				</svg>
+			</button>
+			<h1 class="text-3xl md:text-4xl font-bold text-sky-800 mb-6 text-center">Privacy Policy</h1>
+			<p class="text-sky-600 mb-8 text-center">Last updated: {new Date().toLocaleDateString()}</p>
 
 			<div class="prose prose-sky max-w-none text-sky-800/90">
 				<p>

@@ -26,8 +26,24 @@
 		class="w-full sm:w-2/3 lg:max-w-2xl mx-auto px-4"
 	>
 		<div
-			class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl shadow-sky-400/20 p-8 md:p-12 border border-sky-200/50"
+			class="relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl shadow-sky-400/20 p-8 md:p-12 border border-sky-200/50"
 		>
+			<button
+				on:click={() => history.back()}
+				aria-label="Go back to the previous page"
+				class="hover:cursor-pointer absolute top-6 left-6 md:top-8 md:left-8 z-10 text-sky-600 hover:text-sky-800 transition-colors"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="2.5"
+					stroke="currentColor"
+					class="w-6 h-6"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+				</svg>
+			</button>
 			<div class="text-center mb-10">
 				<h1 class="text-3xl font-bold text-sky-800">Contact Us</h1>
 				<p class="text-sky-600 mt-2">Have a question or want to learn more? Drop us a line.</p>
