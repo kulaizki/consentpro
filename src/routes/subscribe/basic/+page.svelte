@@ -20,10 +20,26 @@
 	}
 </script>
 
-<div class="bg-pattern min-h-screen py-16 md:py-24 flex items-center justify-center text-slate-800">
+<div class="bg-pattern min-h-screen py-16 md:py-24 flex items-center justify-center text-slate-800 relative">
+	<button
+		on:click={() => history.back()}
+		aria-label="Go back to the previous page"
+		class="hover:cursor-pointer absolute top-8 left-8 z-10 p-3 rounded-full bg-white/50 hover:bg-white/80 backdrop-blur-sm transition-colors shadow-md hover:shadow-lg"
+	>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="2"
+			stroke="currentColor"
+			class="w-5 h-5 text-sky-700"
+		>
+			<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+		</svg>
+	</button>
 	<div
 		in:fly={{ y: 20, duration: 800, easing: sineIn, delay: 200 }}
-		class="w-2/3 lg:max-w-2xl mx-auto px-4"
+		class="w-full sm:w-2/3 lg:max-w-2xl mx-auto px-4"
 	>
 		<div
 			class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl shadow-sky-400/20 p-8 md:p-12 border border-sky-200/50"
@@ -68,7 +84,7 @@
 				<button
 					type="submit"
 					disabled={loading || !!successMessage}
-					class="group relative w-full inline-flex items-center justify-center gap-2.5 px-8 py-3 text-lg font-semibold text-white rounded-lg shadow-md transition-all duration-300 border-2 border-transparent bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-padding hover:from-sky-500 hover:to-sky-700 hover:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:ring-offset-2 focus:ring-offset-white disabled:opacity-70 disabled:cursor-not-allowed"
+					class="hover:cursor-pointer group relative w-full inline-flex items-center justify-center gap-2.5 px-8 py-3 text-lg font-semibold text-white rounded-lg shadow-md transition-all duration-300 border-2 border-transparent bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-padding hover:from-sky-500 hover:to-sky-700 hover:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:ring-offset-2 focus:ring-offset-white disabled:opacity-70 disabled:cursor-not-allowed"
 				>
 					{#if loading}
 						<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

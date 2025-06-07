@@ -20,10 +20,26 @@
 	}
 </script>
 
-<div class="bg-pattern min-h-screen py-16 md:py-24 flex items-center justify-center text-slate-800">
+<div class="bg-pattern min-h-screen py-16 md:py-24 flex items-center justify-center text-slate-800 relative">
+	<button
+		on:click={() => history.back()}
+		aria-label="Go back to the previous page"
+		class="hover:cursor-pointer absolute top-8 left-8 z-10 p-3 rounded-full bg-white/50 hover:bg-white/80 backdrop-blur-sm transition-colors shadow-md hover:shadow-lg"
+	>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="2"
+			stroke="currentColor"
+			class="w-5 h-5 text-sky-700"
+		>
+			<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+		</svg>
+	</button>
 	<div
 		in:fly={{ y: 20, duration: 800, easing: sineIn, delay: 200 }}
-		class="w-3/4 lg:max-w-2xl mx-auto px-4"
+		class="w-full sm:w-3/4 lg:max-w-2xl mx-auto px-4"
 	>
 		<div
 			class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl shadow-sky-400/20 p-8 md:p-12 border border-sky-200/50"
