@@ -1,5 +1,7 @@
 # ConsentPro
 
+![ConsentPro OG Image](static/consentpro-og.png)
+
 Simplify data privacy compliance with ConsentPro. Our platform provides automated consent management tools to help Philippine businesses comply with NPC Circular No. 2023-04.
 
 This is a web application built with SvelteKit to provide a user-friendly interface for managing user consent for data processing, tailored to the requirements of Philippine regulations.
