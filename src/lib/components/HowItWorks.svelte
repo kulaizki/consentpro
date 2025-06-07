@@ -53,7 +53,7 @@
             {i + 1}
           </div>
           <h3 class="text-xl font-semibold text-sky-700 mb-2.5">{step.name}</h3>
-          <p class="text-gray-600 text-sm leading-relaxed flex-grow">{step.description}</p>
+          <p class="text-sky-800/80 text-sm leading-relaxed flex-grow">{step.description}</p>
         </div>
       {/each}
     </div>
