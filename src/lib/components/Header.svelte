@@ -27,13 +27,19 @@
 			if (element) {
 				element.scrollIntoView({ behavior: 'smooth' });
 			}
+		} else if (href === '/') {
+			if ($page.url.pathname === '/') {
+				event.preventDefault();
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+			// On other pages, allow default navigation to home
 		}
 	}
 </script>
 
 <header class="bg-gray-950/90 backdrop-blur-md border-b-2 border-sky-600 sticky top-0 z-50 py-2">
 	<div class="container mx-auto px-4 flex justify-between items-center">
-		<a href="/" class="flex items-center group z-10" on:click={() => mobileMenuOpen = false}>
+		<a href="/" class="flex items-center group z-10" on:click={(e) => { smoothScroll(e); mobileMenuOpen = false; }}>
 			<img
 				src="/consentpro-logo-text-min.png"
 				alt="ConsentPro Logo"
