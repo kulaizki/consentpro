@@ -6,7 +6,7 @@
 </script>
 
 <section
-	id="problem-solution"
+	id="solution"
 	class="py-16 md:py-24 bg-sky-50 border-b border-sky-200 min-h-screen flex flex-col justify-center"
 	use:inview={{ threshold: 0.1, unobserveOnEnter: true }}
 	on:inview_change={(event) => {

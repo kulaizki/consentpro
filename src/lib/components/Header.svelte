@@ -49,6 +49,7 @@
 
 		<!-- Desktop Navigation Links -->
 		<ul class="hidden md:flex items-center space-x-6">
+			<li><a href="/#solution" class="font-medium text-white hover:text-sky-300 transition-colors" on:click={smoothScroll}>Solution</a></li>
 			<li><a href="/#features" class="font-medium text-white hover:text-sky-300 transition-colors" on:click={smoothScroll}>Features</a></li>
 			<li><a href="/#how-it-works" class="font-medium text-white hover:text-sky-300 transition-colors" on:click={smoothScroll}>Process</a></li>
 			<li><a href="/#benefits" class="font-medium text-white hover:text-sky-300 transition-colors" on:click={smoothScroll}>Benefits</a></li>
@@ -78,6 +79,7 @@
 	{#if mobileMenuOpen}
 		<div transition:fly={{ y: -20, duration: 300 }} class="md:hidden absolute top-full left-0 w-full bg-gray-950/95 backdrop-blur-md shadow-lg pt-2 pb-4 z-40">
 			<div class="container mx-auto px-4 flex flex-col space-y-2">
+				<a href="/#solution" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-300 hover:bg-transparent transition-colors" on:click={smoothScroll} on:click={toggleMobileMenu}>Solution</a>
 				<a href="/#features" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-300 hover:bg-transparent transition-colors" on:click={smoothScroll} on:click={toggleMobileMenu}>Features</a>
 				<a href="/#how-it-works" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-300 hover:bg-transparent transition-colors" on:click={smoothScroll} on:click={toggleMobileMenu}>Process</a>
 				<a href="/#benefits" class="block px-3 py-2 rounded-md font-semibold text-white hover:text-sky-300 hover:bg-transparent transition-colors" on:click={smoothScroll} on:click={toggleMobileMenu}>Benefits</a>
