@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import { tick } from 'svelte';
 
@@ -11,7 +11,7 @@
 			event.preventDefault();
 			const targetId = href.substring(2);
 
-			if ($page.url.pathname !== '/') {
+			if (page.url.pathname !== '/') {
 				await goto('/');
 				await tick();
 			}
@@ -21,7 +21,7 @@
 				element.scrollIntoView({ behavior: 'smooth' });
 			}
 		} else if (href === '/') {
-			if ($page.url.pathname === '/') {
+			if (page.url.pathname === '/') {
 				event.preventDefault();
 				window.scrollTo({ top: 0, behavior: 'smooth' });
 			}

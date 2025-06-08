@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
 	export let title: string = 'ConsentPro';
 	export let description: string =
@@ -11,7 +11,7 @@
 
 	const siteUrlBase: string = 'https://consentpro.vercel.app';
 
-	$: currentPath = $page.url.pathname;
+	$: currentPath = page.url.pathname;
 
 	$: canonicalUrl = `${siteUrlBase}${currentPath}`;
 	const logoUrl: string = '/cp-logo-min.png';
