@@ -14,7 +14,6 @@
 
 <section
 	class="hero-section relative flex min-h-screen flex-col justify-center overflow-hidden border-b border-sky-200 bg-cover bg-center bg-no-repeat py-16 md:py-20"
-	style="background-image: url('/hero-bg-min.png');"
 >
 	<div class="relative z-[2] container mx-auto px-4 text-center">
 		<div
@@ -86,6 +85,16 @@
 </section>
 
 <style>
+	.hero-section {
+		background-image: url('/hero-bg-mobile-min.png');
+	}
+
+	@media (min-width: 768px) {
+		.hero-section {
+			background-image: url('/hero-bg-min.png');
+		}
+	}
+
 	.hero-section::before {
 		content: '';
 		position: absolute;
