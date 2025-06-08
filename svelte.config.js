@@ -1,6 +1,8 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
+const isDevelopment = process.env.NODE_ENV === 'development';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://svelte.dev/docs/kit/integrations
@@ -14,9 +16,18 @@ const config = {
 		adapter: adapter(),
 
 		csp: {
+			mode: 'auto',
 			directives: {
-				'script-src': ['self'],
-				'style-src': ['self', 'unsafe-inline']
+				'script-src': [
+					'self',
+					'%sveltekit.nonce%',
+					// Vite's dev server needs 'unsafe-eval' for sourcemaps and HMR.
+					...(isDevelopment ? ['unsafe-eval'] : [])
+				],
+				'style-src': ['self', 'unsafe-inline', 'https://fonts.googleapis.com'],
+				'font-src': ['self', 'https://fonts.gstatic.com'],
+				'base-uri': ['self'],
+				'object-src': ['none']
 			}
 		}
 	}
