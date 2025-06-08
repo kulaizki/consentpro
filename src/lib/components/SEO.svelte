@@ -3,7 +3,7 @@
 
 	export let title: string = 'ConsentPro';
 	export let description: string =
-		"Simplify data privacy compliance with ConsentPro. Our platform provides automated consent management tools to help Philippine businesses comply with NPC Circular No. 2023-04.";
+		"Simplify data privacy compliance with ConsentPro.";
 	export let image: string = '/consentpro-og.png'; 
 	export let siteName: string = 'ConsentPro';
 	export let author: string | null = null;
