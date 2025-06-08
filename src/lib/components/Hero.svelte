@@ -15,7 +15,7 @@
 </script>
 
 <section 
-  class="hero-section flex flex-col justify-center min-h-screen py-16 md:py-20 relative bg-cover bg-center bg-no-repeat border-b border-sky-200"
+  class="hero-section flex flex-col justify-center min-h-screen py-16 md:py-20 relative bg-cover bg-center bg-no-repeat border-b border-sky-200 overflow-hidden"
   style="background-image: url('/hero-bg-min.png');"
 >
     <div class="container relative z-[2] mx-auto text-center px-4">
@@ -57,7 +57,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
     bottom: 0;
     background-color: rgba(255, 255, 255, .95);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='56' viewBox='0 0 28 56'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='plus' fill='%230ea5e9' fill-opacity='0.04'%3E%3Cpath d='M13 14V0h2v14h14v2H15v14h-2V16H0v-2h13z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
