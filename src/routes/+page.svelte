@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-    <title>ConsentPro - Simplified Data Privacy Compliance</title>
+    <title>ConsentPro</title>
     <meta
         name="description"
         content="ConsentPro helps businesses in the Philippines comply with data privacy laws through an easy-to-use platform for consent form creation, management, and reporting."
