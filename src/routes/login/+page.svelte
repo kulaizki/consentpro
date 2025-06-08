@@ -4,37 +4,20 @@
 
 	let email = '';
 	let password = '';
-	let confirmPassword = '';
 	let loading = false;
-	let successMessage = '';
 	let errorMessage = '';
 
 	async function handleSubmit() {
 		errorMessage = '';
-		successMessage = '';
 		loading = true;
 
-		if (password !== confirmPassword) {
-			errorMessage = 'Passwords do not match.';
-			loading = false;
-			return;
-		}
-
-		// Simulate a common validation error
-		if (!password || password.length < 8) {
-			errorMessage = 'Password must be at least 8 characters long.';
-			loading = false;
-			return;
-		}
-
-		// Simulate API call to Supabase
 		await new Promise((resolve) => setTimeout(resolve, 1500));
 
-		// Simulate a successful sign-up
-		if (email && password) {
-			successMessage = 'Success! Please check your email to verify your account.';
+		if (email === 'test@example.com' && password === 'password123') {
+			// In a real app, you'd redirect to a dashboard
+			alert('Logged in successfully!');
 		} else {
-			errorMessage = 'Please fill in all fields.';
+			errorMessage = 'Invalid email or password.';
 		}
 
 		loading = false;
@@ -51,8 +34,8 @@
 			class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl shadow-sky-400/20 p-8 border border-sky-200/50"
 		>
 			<div class="text-center mb-10">
-				<h1 class="text-3xl font-bold text-sky-800">Create your account</h1>
-				<p class="text-sky-600 mt-2">Start your 14-day free trial today.</p>
+				<h1 class="text-3xl font-bold text-sky-800">Welcome back</h1>
+				<p class="text-sky-600 mt-2">Log in to your account to continue.</p>
 			</div>
 
 			<form on:submit|preventDefault={handleSubmit} class="space-y-6">
@@ -71,23 +54,9 @@
 						class="w-full px-4 py-3 rounded-lg border border-sky-200 bg-white/50 focus:outline-none focus:ring-2 focus:ring-sky-400 transition"
 						required
 					/>
-					<input
-						type="password"
-						bind:value={confirmPassword}
-						placeholder="Confirm password"
-						class="w-full px-4 py-3 rounded-lg border border-sky-200 bg-white/50 focus:outline-none focus:ring-2 focus:ring-sky-400 transition"
-						required
-					/>
 				</div>
 
-				{#if successMessage}
-					<div
-						in:fade
-						class="text-center p-3 rounded-lg bg-green-100 text-green-800 border border-green-200"
-					>
-						{successMessage}
-					</div>
-				{:else if errorMessage}
+				{#if errorMessage}
 					<div
 						in:fade
 						class="text-center p-3 rounded-lg bg-red-100 text-red-800 border border-red-200"
@@ -122,49 +91,16 @@
 								d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
 							></path>
 						</svg>
-						Processing...
+						Logging in...
 					{:else}
-						Create Account
+						Log In
 					{/if}
 				</button>
-
-				<div class="relative flex items-center py-2">
-					<div class="flex-grow border-t border-sky-200"></div>
-					<span class="flex-shrink mx-4 text-sm text-sky-500">OR</span>
-					<div class="flex-grow border-t border-sky-200"></div>
-				</div>
-
-				<div class="space-y-4">
-					<button
-						type="button"
-						class="hover:cursor-pointer w-full flex items-center justify-center gap-3 py-3 px-4 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 transition-colors"
-					>
-						<svg class="w-5 h-5" viewBox="0 0 48 48">
-							<path
-								fill="#FFC107"
-								d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
-							></path>
-							<path
-								fill="#FF3D00"
-								d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
-							></path>
-							<path
-								fill="#4CAF50"
-								d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.222,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
-							></path>
-							<path
-								fill="#1976D2"
-								d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.089,5.571l6.19,5.238C41.38,36.258,44,30.638,44,24C44,22.659,43.862,21.35,43.611,20.083z"
-							></path>
-						</svg>
-						Sign up with Google
-					</button>
-				</div>
 			</form>
 			<div class="text-center mt-8">
 				<p class="text-sm text-sky-700">
-					Already have an account?
-					<a href="/login" class="font-semibold text-sky-600 hover:underline">Log in</a>
+					Don't have an account?
+					<a href="/free-trial" class="font-semibold text-sky-600 hover:underline">Sign up</a>
 				</p>
 			</div>
 		</div>
