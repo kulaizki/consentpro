@@ -27,7 +27,12 @@ const config = {
 				],
 				'style-src': ['self', 'unsafe-inline', 'https://fonts.googleapis.com'],
 				'font-src': ['self', 'https://fonts.gstatic.com'],
-				'connect-src': ['self', 'https://cloud.umami.is', 'https://*.vercel-insights.com'],
+				'connect-src': [
+					'self',
+					'https://cloud.umami.is',
+					'https://api-gateway.umami.dev',
+					'https://*.vercel-insights.com'
+				],
 				'base-uri': ['self'],
 				'object-src': ['none']
 			}
