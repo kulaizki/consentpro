@@ -9,7 +9,7 @@
 	export let author: string | null = null;
 	export let keywords: string = 'data privacy, NPC Circular 2023-04, consent management, Philippines, compliance software, data protection, SaaS, consent forms, privacy tool';
 
-	const siteUrlBase: string = 'https://consentpro.vercel.app';
+	const siteUrlBase: string = 'https://www.consentpro.vercel.app';
 
 	$: currentPath = $page.url.pathname;
 
