@@ -20,12 +20,14 @@ const config = {
 			directives: {
 				'script-src': [
 					'self',
+					'https://cloud.umami.is',
 					'%sveltekit.nonce%',
 					// Vite's dev server needs 'unsafe-eval' for sourcemaps and HMR.
 					...(isDevelopment ? ['unsafe-eval'] : [])
 				],
 				'style-src': ['self', 'unsafe-inline', 'https://fonts.googleapis.com'],
 				'font-src': ['self', 'https://fonts.gstatic.com'],
+				'connect-src': ['self', 'https://cloud.umami.is', 'https://*.vercel-insights.com'],
 				'base-uri': ['self'],
 				'object-src': ['none']
 			}
