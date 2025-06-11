@@ -6,6 +6,10 @@ Simplify data privacy compliance with ConsentPro. Our platform provides automate
 
 This is a web application built with SvelteKit to provide a user-friendly interface for managing user consent for data processing, tailored to the requirements of Philippine regulations.
 
+## 🚧 Project Status
+
+**This project is currently in progress.** The features and functionalities described are under active development and may not be fully implemented.
+
 ## ✨ Features
 
 -   **Automated Consent Management:** Streamline the process of obtaining, storing, and managing user consent.
